@@ -1,0 +1,30 @@
+
+
+  
+  
+
+  
+<div >
+<table style="position: absolute;top:120px" class="responstable">
+  
+  <tr>
+    
+    <th data-th="Driver details"><span>Customer name</span></th>
+    <th>Product Opted</th>
+    <th>Contact Number</th>
+    <th>Price</th>
+  </tr>
+  
+  <tr *ngFor="let i of dtails;let k=index;">
+    <td>{{i.customer_name}}</td>
+    <td>{{i.product_name}}</td>
+     <td>{{i.phone}}</td>
+    <td>{{i.price}}</td>
+    
+</tr>
+  
+  
+</table>
+  
+  
+</div>

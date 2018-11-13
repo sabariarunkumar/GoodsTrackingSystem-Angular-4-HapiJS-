@@ -1,0 +1,43 @@
+<div class="s" style="position:absolute;top:110px;">
+<h2 >Existing Products</h2>
+</div>
+<div class="xyz">
+
+    
+    <div style="margin-top:50px;">
+    <ul *ngFor = "let data1 of people">
+      <li style="color:brown;"><i> {{data1.product_name}}</i></li>
+    </ul>
+  </div>
+    
+    
+  </div>
+<div class="main" >
+    
+  <h1>Incoming New Items</h1>
+  <div class="addItem">
+      <input [(ngModel)] = "orderid" placeholder="ProductCode" class="addText">
+     <input [(ngModel)] = "pname" placeholder="ProductName" class="addText">
+          <input [(ngModel)] = "cname" placeholder="CustomerName" class="addText">
+     <input [(ngModel)] = "phone" placeholder="Phone" class="addText">
+     <input [(ngModel)] = "price" placeholder="Price" class="addText">
+     <input [(ngModel)] = "location" placeholder="DestiniedPlace" class="addText">
+    <button (click)="pushItem()">Add</button>
+  </div> 
+ <div>
+  <ul>
+      <li *ngFor="let i of items;let ind=index">
+          Product {{i}} 
+          
+          <span (click) = "removeItem(ind)"><u>remove</u></span>
+     </li>
+
+  </ul> 
+  </div> 
+  </div>
+  <div class="bot">
+    <h3>The Newly Added Products</h3>
+    
+  <h3>{{pnp}}</h3>
+   
+  </div>  

@@ -1,0 +1,19 @@
+img{
+    display:inline;
+}
+h1{
+    display:inline;
+}
+
+
+a:link, a:visited {
+    background-color: rgb(246, 173, 37);
+    color: white;
+    padding: 14px 15px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: red;
+}

@@ -1,0 +1,30 @@
+
+<html>
+<body>
+
+
+<br>
+   
+
+<!-- <div ><iframe width="250" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" [src]='mfuc("Gobichettipalayam")'></iframe></div><br /> -->
+<div style="margin-left:110px;margin-top:210px;float:left">
+<div style="margin-bottom:20px;" *ngFor = "let data1 of selectop;let ind=index;">
+        <button style="border-radius: 12px;padding:10px;background-color:pink" (click)="pushp(ind)">Track delivery of the product {{selectop[ind].product_name}} to {{data1.customer_name}}</button>
+       
+      
+   
+
+</div>
+</div>
+ <div  style="float:lefts;margin-top:120px;" *ngFor = "let data1 of selectop;let cn=index;">
+    <div></div>
+      <div style="position:absolute;left:490px;top:210px;" *ngIf="isValid[cn];">
+                 <iframe  [src]='mfun(data1.location)' width="840" height="420" frameborder="0" marginheight="0" marginwidth="0" ></iframe>
+     </div>
+  </div>    
+   
+    <!-- <span style="margin-top:90px" style="float:left;margin:auto;font-size:20px">{{data1.product_name}} is being tracked for {{data1.customer_name}} destinied to reach {{data1.location}}</span>  -->
+    <br><br>
+<!-- </div>  -->
+</body>
+</html>
